@@ -42,7 +42,7 @@ C++ | TypeScript | JavaScript | Java
 Node.js · GraphQL · PostgreSQL · Redis
 Docker · Linux · GitHub Actions
 
-React (when backend people are forced to touch UI)
+React 
 ```
 
 ---
