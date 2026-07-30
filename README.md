@@ -21,7 +21,6 @@ Currently curious about observability, distributed systems, and making debugging
 
 ---
 
-## Hey
 
 I'm 20, based in Delhi, and I spend most of my time building backend systems and the infrastructure beneath them.
 
