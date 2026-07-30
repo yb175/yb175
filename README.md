@@ -97,4 +97,4 @@ More articles → [medium.com/@bhatiayug175](https://medium.com/@bhatiayug175)
 
 ## Outside of code
 
-When I'm not building, I'm usually reading about distributed systems, browsing engineering postmortems, or trying to understand why production systems fail in interesting ways.
+When I'm not building, I'm usually reading about distributed systems, browsing engineering postmortems, or trying to understand why production systems fail in interesting ways. 
