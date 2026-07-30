@@ -2,23 +2,21 @@
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=I+build+backend+systems.;I+obsess+over+elegant+architecture.;Currently+building+VOID+%F0%9F%94%8D;Always+learning+something+new.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=I+build+backend+systems.;I+like+hard+engineering+problems.;Currently+building+VOID+🔍;Always+learning.)](https://git.io/typing-svg)
 
 </div>
 
 ---
 
-<!-- <img align="right" width="280" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="coding gif" /> -->
-
 ### Hey, I'm Yug 👋
 
-I'm 20, in Delhi, and most of my time goes into backend systems and whatever infrastructure sits underneath them.
+I'm 20, based in Delhi, and I spend most of my time building backend systems and the infrastructure beneath them.
 
-I don't build for titles or metrics. A problem gets stuck in my head, and the only way to get it out is to actually write the code that fixes it.
+Most projects start the same way: I run into a problem I can't stop thinking about, and building is usually how I figure out the answer.
 
-Lately the question I can't put down is: **what does observability even mean once the thing you're watching is itself making decisions?**
+Right now that question is:
 
-<br clear="right"/>
+> **What does observability look like when the system you're observing is itself making decisions?**
 
 ---
 
@@ -28,20 +26,25 @@ Lately the question I can't put down is: **what does observability even mean onc
 <tr>
 <td width="50%">
 
-**[VOID](https://github.com/VOID-Platform/void)**
+### 🔍 VOID
 
-AI agents are making decisions in production now, and debugging them still feels like reading tea leaves. VOID instruments agent executions, flags what's actually abnormal, and leaves behind enough context that fixing the issue doesn't turn into a guessing game.
+AI agents are moving into production, but debugging them still feels like guesswork.
 
-`TypeScript` `Python` `OpenTelemetry` `Pydantic AI`
+VOID instruments agent executions, detects abnormal behaviour, and leaves behind enough context that engineers can understand **why** something failed—not just that it failed.
+
+`TypeScript` · `Python` · `OpenTelemetry` · `Pydantic AI`
 
 </td>
+
 <td width="50%">
 
-**[PullShark](https://pullshark.site)**
+### 🦈 PullShark
 
-Most AI code review tools just throw the raw diff at a model. PullShark cleans it up first, strips the noise, keeps what matters, so the model spends its context on actual code instead of metadata.
+Most AI code review starts with raw Git diffs.
 
-`Node.js` `BullMQ` `Redis` `GitHub API`
+PullShark takes a different approach by cleaning and prioritizing changes before they ever reach a model, letting the LLM spend its context understanding code instead of metadata.
+
+`Node.js` · `BullMQ` · `Redis` · `GitHub API`
 
 </td>
 </tr>
@@ -50,43 +53,52 @@ Most AI code review tools just throw the raw diff at a model. PullShark cleans i
 ---
 
 ### How I think
-<!-- <img align="left" width="240" src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" alt="thinking gif" /> -->
 
-Given a choice, I'll push a guarantee down to the database instead of trusting application code to hold it. A unique constraint doesn't care how many requests hit it at once. A check-then-insert in a controller does, and eventually it gets hit at exactly the wrong moment.
+I like systems where correctness is enforced as close to the source of truth as possible.
 
-Most of the bugs that stuck with me weren't bad logic. They were someone assuming two things would never happen at the same time. I write code assuming whoever reads it next is half-asleep and something's already on fire.
+If the database can guarantee an invariant, I let it. If a queue can guarantee delivery, I don't rebuild that logic somewhere else.
 
-<br clear="left"/>
+The bugs that have taught me the most weren't syntax errors—they were assumptions about timing.
+
+I try to write code that still makes sense when someone opens it at 2am during an incident.
 
 ---
 
 ### Open source
 
-I maintain a piece of [Talawa](https://github.com/PalisadoesFoundation), under the Palisadoes Foundation. 14 merged PRs in, mostly fixing things nobody notices until they break. The one that's stuck with me: two requests could hit the same check at basically the same instant and both end up inserting a duplicate row, because the check and the insert weren't one atomic thing. A database constraint fixed it properly, no amount of "add a retry" would have.
+I've spent a good amount of time contributing to the **Talawa** ecosystem under the **Palisadoes Foundation**.
 
-Working in someone else's codebase, one that already has real people depending on it, has taught me more than most things I've built alone.
+The problems I naturally gravitate toward are the ones that only appear once software has real users—race conditions, authorization edge cases, performance regressions, and infrastructure that's almost correct until production proves otherwise.
+
+Working in someone else's codebase has taught me that understanding why code exists is often harder—and more valuable—than writing new code.
 
 ---
 
 ### Writing
 
-Not tutorials, just the reasoning behind what I build, written down as I go.
+I write occasionally—not tutorials, just notes from things I've learned while building.
 
-→ [Building VOID: Finding Why AI Agents Fail](https://medium.com/@bhatiayug175/building-void-finding-why-ai-agents-fail-2f29d4b87658)
+→ **Building VOID: Finding Why AI Agents Fail**
 
-More on [Medium](https://medium.com/@bhatiayug175)
+https://medium.com/@bhatiayug175/building-void-finding-why-ai-agents-fail-2f29d4b87658
+
+More writing:
+
+https://medium.com/@bhatiayug175
 
 ---
 
 ### Where I'm going
 
-<!-- <img align="right" width="200" src="https://media.giphy.com/media/LaVp0AyqR5bGsC5Cbm/giphy.gif" alt="rocket gif"/> -->
+I want to build infrastructure that developers genuinely rely on.
 
-I want to build something people would actually miss if it disappeared.
+The plan is simple:
 
-The plan: go deep on one real problem until I know it better than most people do, write about what I find along the way, and let it become a company once the product has earned that. I'd want to do that through YC specifically, less because it's a milestone, more because it doesn't let you cut corners.
+- Find a problem worth spending years on.
+- Understand it deeply.
+- Build something people would actually miss if it disappeared.
 
-<br clear="right"/>
+If that eventually becomes a company, I'd love to build it through **Y Combinator**—not because YC is the destination, but because I admire the kind of engineering-first companies it helps create.
 
 ---
 
